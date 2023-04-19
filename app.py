@@ -22,6 +22,6 @@ if st.button ('Predict Largest'):
     else :
         large = num3
 
-    st.subheader('Largest Number')
+    st.header('Largest Number')
     st.write(large)
     
