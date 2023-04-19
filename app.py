@@ -7,12 +7,13 @@ This app predicts the largest among the 3 given numbers(value greater than the o
 #Get Input
 
 st.header('User Input Parameters')
+col1, col2, col3 = st.columns([1,1,1,])
 
-num1 = st.number_input("FIRST_NUMBER")
-num2 = st.number_input("SECOND_NUMBER")
-num3 = st.number_input("THIRD_NUMBER")
+num1 = col1.number_input("FIRST_NUMBER")
+num2 = col2.number_input("SECOND_NUMBER")
+num3 = col3.number_input("THIRD_NUMBER")
 
-if st.button ('Find Largest'):
+if st.button ('Predict Largest'):
     
     if num1 >= num2 and num1 >= num3 :
         large = num1
