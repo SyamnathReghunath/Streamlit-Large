@@ -14,7 +14,7 @@ num3 = st.number_input("THIRD_NUMBER")
 
 if num1 >= num2 and num1 >= num3 :
     large = num1
-else if num2 >= num1 and num2 >= num3 :
+elif num2 >= num1 and num2 >= num3 :
     large = num2
 else :
     large = num3
