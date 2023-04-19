@@ -8,10 +8,17 @@ This app predicts the largest among the 3 given numbers(value greater than the o
 
 st.header('User Input Parameters')
 
-cnt_children = st.number_input("CNT_CHILDREN",min_value=0,max_value=20,step=1)
-cnt_fam_members = st.number_input("CNT_FAM_MEMBERS",min_value=0,max_value=20,step=1)
-cnt_new_members = st.number_input("CNT_NEW_MEMBERS",min_value=0,max_value=20,step=1)
+num1 = st.number_input("FIRST_NUMBER")
+num2 = st.number_input("SECOND_NUMBER")
+num3 = st.number_input("THIRD_NUMBER")
+
+if num1 >= num2 and num1 >= num3 :
+    large = num1
+elseif num2 >= num1 and num2 >= num3 :
+    large = num2
+else :
+    large = num3
 
 st.subheader('Largest Number')
-st.write(cnt_children)
+st.write(large)
     
